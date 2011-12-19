@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @pony.name %>
+</p>
+
+<p>
+  <b>Power:</b>
+  <%= @pony.power %>
+</p>
+
+<p>
+  <b>Color:</b>
+  <%= @pony.color %>
+</p>
+
+<%= image_tag @pony.image_url, :alt => @pony.name %> 
+<%=%>
+
+<%= link_to 'Edit', edit_pony_path(@pony) %> |
+<%= link_to 'Back', ponies_path %>

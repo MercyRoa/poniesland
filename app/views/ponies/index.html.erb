@@ -1,0 +1,27 @@
+<h1>Listing ponies</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Power</th>
+    <th>Color</th>
+      <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @ponies.each do |pony| %>
+  <tr>
+    <td><%= pony.name %></td>
+    <td><%= pony.power %></td>
+    <td><%= pony.color %></td>
+     <td><%= link_to 'Show', pony %></td>
+    <td><%= link_to 'Edit', edit_pony_path(pony) %></td>
+    <td><%= link_to 'Destroy', pony, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Pony', new_pony_path %>

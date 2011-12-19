@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  pony_id: 
+  status: MyText
+  created: 2011-12-08 09:59:55
+
+two:
+  pony_id: 
+  status: MyText
+  created: 2011-12-08 09:59:55
